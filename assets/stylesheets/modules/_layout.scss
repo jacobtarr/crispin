@@ -1,0 +1,90 @@
+// -----------------------------
+// Layout
+// -----------------------------
+
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	font-family: $site-font__helvetica;
+	color: #282b2e;
+	font-size: 14px;
+	line-height: 1.4;
+	background: url('../../assets/img/cityscape.png') no-repeat;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../assets/img/cityscape.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../assets/img/cityscape.png', sizingMethod='scale')";
+}
+
+@include headings() {
+	font-weight: 700;
+	margin: 15px 0;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 32px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+p { font-size: 14px; }
+
+a {
+	color: $site-color__blue;
+	text-decoration: none;
+	&:hover {
+		@include transition(.2s ease-in);
+	}
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+.site-container {
+	width: 1030px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.site-main {
+	margin-top: 30px;
+}
+
+.site-content {
+	background: white;
+	padding: 20px 20px 0 20px;
+}
+
+.site-content__upper-section {
+	@include clearfix();
+}
+
+.site-content__lower-section {
+	@include clearfix();
+}
+
+.site-content__upper-section--carousel {
+	float: left;
+	width: 666px;
+	margin-right: 20px;
+}
+
+.site-content__upper-section--sidebar {
+	float: right;
+	width: 274px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

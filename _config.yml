@@ -1,0 +1,19 @@
+# -------------------------------
+# Site settings
+# -------------------------------
+title: Crispin & Mulberry World Travelers
+email: your-email@domain.com
+description: "A description of something that relates to traveling"
+baseurl: ""
+url: "http://yourdomain.com"
+
+# -------------------------------
+# Build settings
+# -------------------------------
+markdown: kramdown
+permalink: pretty
+sass:
+  sass_dir: assets/stylesheets
+  style: :expanded
+
+

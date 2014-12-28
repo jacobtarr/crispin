@@ -1,0 +1,27 @@
+// -----------------------------
+// Configuration
+// -----------------------------
+
+// Default font sizes
+$h1__font-size: 40px;
+$h2__font-size: 36px;
+$h3__font-size: 32px;
+$h4__font-size: 28px;
+$h5__font-size: 24px;
+$h6__font-size: 20px;
+$p__font-size: 16px;
+
+// Default layout sizes
+$site-width__main: 1000px;
+
+// Default fonts
+$site-font__helvetica: "Helvetica", sans-serif;
+
+// Default layout config
+$site-line-height: 1.4;
+
+// Viewports for mobile devices
+$site-screen__ipad--portrait: 768px;
+$site-screen__iphone--landscape: 480px;
+$site-screen__iphone--portrait: 320px;
+$site-screen__iphone5s--landscape: 568px;

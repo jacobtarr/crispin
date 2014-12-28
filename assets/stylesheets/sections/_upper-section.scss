@@ -1,0 +1,108 @@
+// -----------------------------
+// Upper Section
+// -----------------------------
+
+.site-content__upper-section {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #D1D2D2;
+}
+
+.sidebar__newsletter {
+	@include sidebar-widget($site-color__sidebar-widget--background,
+							10px 10px 0 10px,
+							inherit,
+							#999);
+}
+
+.newsletter__form {
+	@include clearfix();
+	input[type="email"] {
+		width: 100%;
+	}
+	.btn {
+		margin-top: 10px;
+		float: right;
+	}
+}
+
+.newsletter__form--input-group {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: $site-color__sidebar-widget--background-alt;
+	box-shadow: inset 0px 0px 7px 2px darken($site-color__sidebar-widget--background-alt, 5%);
+	ul {
+		margin: 10px 0 0 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		margin-bottom: 5px;
+		input {
+			margin-right: 5px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.newsletter__footer {
+	margin: 10px -10px 0 -10px;
+	padding: 7px 0;
+	border-top: 1px solid #999;
+	background-color: $site-color__sidebar-widget--background-alt;
+	ul {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		display: inline-block;
+		&:first-child {
+			margin-right: 5px;
+		}
+		&:last-child {
+			margin-left: 5px;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: $site-color__blue;
+		}
+	}
+}
+
+.sidebar__travel-deal {
+	margin-top: 20px;
+	@include sidebar-widget($site-color__sidebar-widget--background-travel,
+							10px,
+							white,
+							#868686);
+}
+
+.travel-deal__image {
+	margin: 0;
+	position: relative;
+	line-height: 1;
+	span {
+		display: block;
+		font-weight: 700;
+		background-color: #E3E4E4;
+		opacity: 0.8;
+		width: 100%;
+		position: absolute;
+		bottom: 2px;
+		padding: 10px 15px;
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: $site-color__blue;
+		}
+	}
+}
+
+

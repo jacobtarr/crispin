@@ -1,0 +1,96 @@
+// -----------------------------
+// Carousel
+// -----------------------------
+
+.carousel__thumbnail--arrow {
+	display: none;
+	width: 12px;
+	position: absolute;
+	top: -9px;
+	left: 74px;
+}
+
+.carousel {
+	position: relative;
+	padding-top: 344px;
+	font-size: 0;
+	input[name='slide_switch']{
+		display: none;
+		&:checked + label {
+			opacity: 1;
+			.carousel__thumbnail--arrow {
+				display: block;
+			}
+			> img {
+				border: 4px solid $site-color__blue;			
+			}
+			+ .carousel__slide {
+				opacity: 1;
+				.carousel__caption {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.carousel__caption {
+	display: none;
+	content: '';
+	position: absolute;
+	z-index: 999;
+	top: 259px;
+	left: 0;
+	background-color: #E3E4E4;
+	opacity: 0.8;
+	width: 100%;
+	padding: 10px 13px;
+	h4 {
+		text-transform: uppercase;
+		margin: 0;
+		a {
+			color: inherit;
+			&:hover {
+				color: $site-color__blue;
+			}
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
+
+.carousel__slide {
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	@include transition(all .5s);
+	display: block;
+	opacity: 0;
+	width: 100%;
+}
+
+.carousel input[name='slide_switch'] {
+	display: none;
+}
+
+.carousel__thumbnail {
+	@include box-sizing(content-box);
+	margin: 12px 0 0 0;
+	display: inline-block;
+	width: 159px;
+	position: relative;
+	cursor: pointer;
+	padding-right: 10px;
+	@include transition(all .5s);
+	&.last {
+		padding-right: 0;
+	}
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+

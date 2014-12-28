@@ -1,0 +1,42 @@
+// -----------------------------
+// Mixins
+// -----------------------------
+
+// Select all headings
+@mixin headings($from: 1, $to: 6) {
+	@for $i from $from through $to {
+		h#{$i} {
+			@content
+		}
+	}
+}
+
+// Sidebar widget style
+@mixin sidebar-widget($background-color, $padding, $widget-title-color, $border-color) {
+	background-color: $background-color;
+	padding: $padding;
+	font-size: 12px;
+	h5 {
+		color: $widget-title-color;
+		font-size: 12px;
+		text-transform: uppercase;
+		margin: 0 0 8px 0;
+		padding-bottom: 8px;
+		border-bottom: 1px solid $border-color;
+		img {
+			margin-right: 10px;
+			position: relative;
+			top: 1px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+// -----------------------------
+// Navigation -- Tabs
+// -----------------------------
+
+.site-main__navigation {
+	@include clearfix();
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    background: white;
+	li {
+		text-align: center;
+		width: 16.666667%;
+	    display: inline-block;
+	    list-style: none;
+	    margin-right: -4px;
+	    border-top: 1px solid #BDBDBD;
+	    border-bottom: 1px solid #BDBDBD;
+	    &:last-child {
+	    	width: 16.7%;
+	    }
+	    &.active {
+	    	border-bottom: 1px solid white;
+	    	a, a:hover {
+				background: #fff;
+				color: inherit;
+				margin-top: -18px;
+				padding: 18px 0 12px 0;
+				border-left: 1px solid #BDBDBD;
+				border-right: 1px solid #BDBDBD;
+	    	}
+	    }
+	}
+	a {
+		width: 100%;
+		padding: 12px 0;
+	    display: inline-block;
+	    background-color: $site-color__navigation--link-background;
+	    @include linear-gradient(#FCFCFC, #D1D1D1);
+	    font-size: 12px;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    color: $site-color__navigation--link-text;
+	    @include transition(0.2s ease-in);
+	    &:hover {
+	    	background-color: #C3C5C8;
+	    	@include linear-gradient(#E0E3E6, #BBBCBE);
+	    }
+	}
+}
+
+.tab {
+    display: none;
+    &.active {
+		display: block;
+    }
+}
+
+
+
+
+
+
+

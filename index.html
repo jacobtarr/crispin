@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<main class="site-main">
+    <ul class="site-main__navigation">
+        <li><a href="#site-content__destinations">Destinations</a></li>
+        <li><a href="#site-content__getaways">Getaways</a></li>
+        <li><a href="#site-content__travel-tips">Travel Tips</a></li>
+        <li class="active"><a href="#site-content__news">News & Features</a></li>
+        <li><a href="#site-content__contests">Contests</a></li>
+        <li><a href="#site-content__contact">Contact Us</a></li>
+    </ul>
+	<section class="site-content">
+		<div id="site-content__destinations" class="tab">
+			<div class="site-content__upper-section">
+				<div class="site-content__upper-section--carousel">
+					Carousel here
+				</div>
+				{% include upper-section--sidebar.html %}
+			</div>
+			<div class="site-content__lower-section">
+				{% include lower-section--main.html %}
+				{% include lower-section--sidebar.html %}
+			</div>
+		</div>
+		<div id="site-content__getaways" class="tab">
+			<div class="site-content__upper-section">
+				<div class="site-content__upper-section--carousel">
+					Carousel here
+				</div>
+				{% include upper-section--sidebar.html %}
+			</div>
+			<div class="site-content__lower-section">
+				{% include lower-section--main.html %}
+				{% include lower-section--sidebar.html %}
+			</div>
+		</div>
+		<div id="site-content__travel-tips" class="tab">
+			<div class="site-content__upper-section">
+				<div class="site-content__upper-section--carousel">
+					Carousel here
+				</div>
+				{% include upper-section--sidebar.html %}
+			</div>
+			<div class="site-content__lower-section">
+				{% include lower-section--main.html %}
+				{% include lower-section--sidebar.html %}
+			</div>
+		</div>
+		<div id="site-content__news" class="tab active">
+			<div class="site-content__upper-section">
+				<div class="site-content__upper-section--carousel">
+					{% include upper-section--carousel.html %}
+				</div>
+				{% include upper-section--sidebar.html %}
+			</div>
+			<div class="site-content__lower-section">
+				{% include lower-section--main.html %}
+				{% include lower-section--sidebar.html %}
+			</div>
+		</div>
+		<div id="site-content__contests" class="tab">
+			<div class="site-content__upper-section">
+				<div class="site-content__upper-section--carousel">
+					Carousel here
+				</div>
+				{% include upper-section--sidebar.html %}
+			</div>
+			<div class="site-content__lower-section">
+				{% include lower-section--main.html %}
+				{% include lower-section--sidebar.html %}
+			</div>
+		</div>
+		<div id="site-content__contact" class="tab">
+			<div class="site-content__upper-section">
+				<div class="site-content__upper-section--carousel">
+					Carousel here
+				</div>
+				{% include upper-section--sidebar.html %}
+			</div>
+			<div class="site-content__lower-section">
+				{% include lower-section--main.html %}
+				{% include lower-section--sidebar.html %}
+			</div>
+		</div>
+	</section>
+</main>
